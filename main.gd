@@ -1,7 +1,6 @@
 extends Node2D
 
 var init_ball_speed = 9
-var init_ball_vel: Vector2
 var last_player_scored = 1
 signal new_ball_needed(vel)
 var game_length = 60
