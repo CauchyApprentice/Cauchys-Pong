@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://fgi03kncecb5"]
+
+[ext_resource type="Script" path="res://border.gd" id="1_71dm1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4t5l6"]
+size = Vector2(100, 100)
+
+[node name="border" type="StaticBody2D" groups=["borders"]]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("1_71dm1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_4t5l6")
